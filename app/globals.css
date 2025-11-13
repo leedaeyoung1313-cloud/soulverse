@@ -1,0 +1,18 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply bg-bg text-txt antialiased;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", ui-sans-serif, sans-serif;
+  }
+
+  a {
+    @apply text-accent hover:text-neon transition-colors;
+  }
+}
