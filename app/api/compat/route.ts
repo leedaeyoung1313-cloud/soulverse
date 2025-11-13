@@ -1,4 +1,6 @@
-import { GoogleGenerativeAI } from "@google/genai";
+import { GoogleGenAI } from "@google/genai";
+// 또는 GenAI를 사용해야 할 수도 있습니다. (라이브러리 버전에 따라 다름)
+// import { GenAI } from "@google/genai";
 import { type NextRequest } from 'next/server';
 
 // Firebase Firestore 관련 환경 변수 (사용하지 않으므로 주석 처리 또는 제거 가능)
