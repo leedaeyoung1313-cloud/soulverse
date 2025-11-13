@@ -199,10 +199,11 @@ ${JSON_SPEC}
 
     return NextResponse.json(normalizeOutput(parsed));
   } catch (err: any) {
-    if (DEBUG) console.error('[SOULVERSE] API ERROR:', err?.message);
-    // 에러 메세지를 그대로 노출하면 원인 파악에 유리
-    return NextResponse.json({ error: true, detail: err?.message || '서버 오류' }, { status: 500 });
-  }
+  const msg = err?.message || '서버 내부 오류';
+  console.error('[SOULVERSE] API ERROR:', msg);
+  return NextResponse.json({ error: true, detail: msg }, { status: 500 });
+}
+
 }
 
 export async function GET() {
