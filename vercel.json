@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "api/compat/route": { // 경로 끝에 파일명인 'route'를 추가해야 Vercel이 App Router 함수를 인식합니다.
-      "maxDuration": 30
-    }
-  }
-}
