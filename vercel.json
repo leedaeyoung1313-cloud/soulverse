@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/compat/route.ts": {
+      "maxDuration": 30
+    }
+  }
+}
