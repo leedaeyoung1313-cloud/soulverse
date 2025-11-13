@@ -250,7 +250,7 @@ export default function AnalysisPage({ params }: AnalysisPageProps) {
             <button
               type="submit"
               disabled={loading || !canSubmit}
-              className="
+              className={`
                 w-full mt-2 inline-flex items-center justify-center gap-2
                 px-4 py-3 rounded-xl font-semibold
                 bg-accent text-bg
@@ -258,7 +258,7 @@ export default function AnalysisPage({ params }: AnalysisPageProps) {
                 hover:bg-neon hover:shadow-[0_0_40px_rgba(96,165,250,0.7)]
                 disabled:opacity-50 disabled:cursor-not-allowed
                 transition-all duration-200
-              "
+              `}
             >
               {loading ? '분석 중...' : 'AI 궁합 리포트 받기'}
             </button>
@@ -297,7 +297,7 @@ export default function AnalysisPage({ params }: AnalysisPageProps) {
                     <div className="w-full h-2 rounded-full bg-borderc/60 overflow-hidden">
                       <div
                         className="h-full bg-accent"
-                        style={{ width: \`\${Math.min(100, Math.max(0, value))}%\` }}
+                        style={{ width: `${Math.min(100, Math.max(0, value))}%` }}
                       />
                     </div>
                   </div>

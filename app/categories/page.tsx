@@ -29,12 +29,12 @@ function CategoryCard({ title, description, icon, href }: Category) {
 
   return (
     <div
-      className={\`
+      className={`
         bg-card border border-borderc rounded-2xl p-4
         shadow-deep hover:shadow-deep-hover
         transition-all duration-200
-        \${disabled ? 'opacity-60 cursor-not-allowed' : 'hover:-translate-y-1'}
-      \`}
+        ${disabled ? 'opacity-60 cursor-not-allowed' : 'hover:-translate-y-1'}
+      `}
     >
       {disabled ? (
         <div className="flex items-center gap-4">

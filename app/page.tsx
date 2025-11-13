@@ -20,14 +20,14 @@ export default function LandingPage() {
         <div className="flex flex-col items-center gap-3 mt-4">
           <Link href="/categories">
             <button
-              className="
-                inline-flex items-center gap-2 
+              className={`
+                inline-flex items-center gap-2
                 px-6 py-3 rounded-xl font-semibold
                 bg-accent text-bg
                 shadow-[0_0_25px_rgba(125,211,252,0.5)]
                 hover:bg-neon hover:shadow-[0_0_40px_rgba(96,165,250,0.7)]
                 transition-all duration-200
-              "
+              `}
             >
               💫 지금 바로 운명 분석 시작하기 →
             </button>

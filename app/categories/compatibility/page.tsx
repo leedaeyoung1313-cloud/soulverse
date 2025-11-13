@@ -27,12 +27,12 @@ type Option = (typeof compatibilityOptions)[number];
 function OptionCard({ title, description, icon, topicKey }: Option) {
   return (
     <Link
-      href={\`/categories/compatibility/\${topicKey}\`}
-      className="
+      href={`/categories/compatibility/${topicKey}`}
+      className={`
         block bg-card border border-borderc rounded-2xl p-4
         shadow-deep hover:shadow-deep-hover hover:-translate-y-1
         transition-all duration-200
-      "
+      `}
     >
       <div className="flex items-center gap-4">
         <div className="text-2xl">{icon}</div>
