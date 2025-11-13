@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-const MODEL = process.env.GEMINI_MODEL || 'models/gemini-1.5-flash';
+const MODEL = process.env.GEMINI_MODEL || 'models/gemini-2.5-flash';
 const GEMINI_BASE = 'https://generativelanguage.googleapis.com/v1beta';
 
 type JsonSchema = Record<string, string>;
