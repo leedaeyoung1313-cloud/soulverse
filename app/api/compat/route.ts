@@ -5,7 +5,7 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 const MODEL = process.env.GEMINI_MODEL || 'models/gemini-2.5-flash';
-const GEMINI_BASE = 'https://generativelanguage.googleapis.com/v1beta';
+const GEMINI_BASE = 'https://generativelanguage.googleapis.com/v1';
 
 type JsonSchema = Record<string, string>;
 
